@@ -19,16 +19,11 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100vh;
             min-height: 100vh;
         }
         
         body { 
-            background: url(images/background.png) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            
         }
 
         h1 {
@@ -51,38 +46,55 @@
 
         #cover{
             
+            background: url(images/background.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            /* div positioning */
             display: flex;
             justify-content: center;
             align-items: center; 
 
-            text-align: center;
+            text-align: justify;
 
-            height: 100%;
+            min-height: 90vh;
             
             /*background-color: #EEE;*/
             
         }
 
         .cover-header {
+            min-width: 60vw;
+            max-width: 80vw;
+            margin: 2rem;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
         }
 
         #footer{
-
-            
-
             display: flex;
+            min-width: 100%;
+            position: relative;
             justify-content: center;
-            align-items: flex-end; 
+            align-items: center; 
 
-            background-color: #CCC;
-            opacity: 0.3;
-
-            
+            background-color: #444;
+            opacity: 0.8;   
+            min-height: 10vh;  
         }
 
         .social{
-
-            margin: 0rem 1rem 0rem 0rem;
+            margin: 0rem 1rem 0rem 1rem;
+            display: flex;
+            min-width: 100%;
+            position: relative;
+            justify-content: center;
+            align-items: center; 
         }
 
         #footer i {
@@ -98,9 +110,24 @@
             cursor: pointer;
         }
 
-        .social :first-child{
-            font-weight: 1000;
+        .intro{            
+            background-color: #777;
+            opacity: 0.5;
+
+            border-radius: 5px;
+            border: solid 1px #FFF;
+            padding: 1rem;
         }
+
+        #intro-img{
+            grid-row: 1/3; 
+        }
+
+        #intro-img img{
+            width: 100%;
+
+        }
+
 
     </style>
 
@@ -108,23 +135,24 @@
 
 <body>
     <div class="wrapper">
+
         <div id = "cover">
             <div class="cover-header">
                 
-                <h1>... in development.</h1><span>Žan Horvat, [5.8.2017]</span>
-
             </div>
         </div>
-        <nav id="footer">
+
+        <div id="footer">
             <div class="social">
-                <i class="fa fa-envelope-o"></i></li>
-                <i class="fa fa-facebook"></i></li>
-                <i class="fa fa-twitter"></i></li>
-                <i class="fa fa-instagram"></i></li>
-                <i class="fa fa-dribbble"></i></li>
-                <i class="fa fa-linkedin"></i></li>
-            </div>         
-        </nav>
+                <a href="#"><i class="fa fa-facebook"></i></li></a>
+                <a href="#"><i class="fa fa-twitter"></i></li></a>
+                <a href="#"><i class="fa fa-instagram"></i></li></a>
+                <a href="#"><i class="fa fa-dribbble"></i></li></a>
+                <a href="#"><i class="fa fa-linkedin"></i></li></a>
+                <a href="mailto:zan.horvat@outlook.com"><i class="fa fa-envelope-o"></i></li></a>  
+            </div>       
+        </div>
+
     </div>
 </body>
 </html>
