@@ -18,7 +18,10 @@
         html, body {
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: 100%;   
+        }
+
+        html {
             min-height: 100vh;
         }
         
@@ -57,11 +60,9 @@
             justify-content: center;
             align-items: center; 
 
-            text-align: justify;
+            text-align: center;
 
-            min-height: 90vh;
-            
-            /*background-color: #EEE;*/
+            min-height: 100vh;
             
         }
 
@@ -69,23 +70,19 @@
             min-width: 60vw;
             max-width: 80vw;
             margin: 2rem;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 1rem;
         }
 
         #footer{
             display: flex;
             min-width: 100%;
-            position: relative;
+            position: absolute;
+            bottom: 0;
             justify-content: center;
             align-items: center; 
 
             background-color: #444;
             opacity: 0.8;   
-            min-height: 10vh;  
+             
         }
 
         .social{
@@ -110,25 +107,6 @@
             cursor: pointer;
         }
 
-        .intro{            
-            background-color: #777;
-            opacity: 0.5;
-
-            border-radius: 5px;
-            border: solid 1px #FFF;
-            padding: 1rem;
-        }
-
-        #intro-img{
-            grid-row: 1/3; 
-        }
-
-        #intro-img img{
-            width: 100%;
-
-        }
-
-
     </style>
 
 </head>
@@ -138,21 +116,22 @@
 
         <div id = "cover">
             <div class="cover-header">
-                
-            </div>
+                </div>
         </div>
 
-        <div id="footer">
-            <div class="social">
-                <a href="#"><i class="fa fa-facebook"></i></li></a>
-                <a href="#"><i class="fa fa-twitter"></i></li></a>
-                <a href="#"><i class="fa fa-instagram"></i></li></a>
-                <a href="#"><i class="fa fa-dribbble"></i></li></a>
-                <a href="#"><i class="fa fa-linkedin"></i></li></a>
-                <a href="mailto:zan.horvat@outlook.com"><i class="fa fa-envelope-o"></i></li></a>  
-            </div>       
-        </div>
+        
 
     </div>
 </body>
+
+<footer id="footer">
+    <div class="social">
+        <a href="#"><i class="fa fa-facebook"></i></li></a>
+        <a href="#"><i class="fa fa-twitter"></i></li></a>
+        <a href="#"><i class="fa fa-instagram"></i></li></a>
+        <a href="#"><i class="fa fa-dribbble"></i></li></a>
+        <a href="#"><i class="fa fa-linkedin"></i></li></a>
+        <a href="mailto:zan.horvat@outlook.com"><i class="fa fa-envelope-o"></i></li></a>  
+    </div>       
+</footer>
 </html>
