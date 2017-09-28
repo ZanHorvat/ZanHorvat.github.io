@@ -6,133 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
     <link rel="icon" type="image/png" href="images/favico.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="style.css">
     <title>Lounge</title>
-    <style>
-        
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100vh;
-        }
-        
-        body { 
-            
-        }
-        h1 {
-            color: white;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        span {
-            color: grey;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-style: italic;
-        }
-        .wrapper {
-            
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            
-        }
-        #cover{
-            
-            background: url(images/background.png) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            /* div positioning */
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            text-align: justify;
-            min-height: 90vh;
-            
-            /*background-color: #EEE;*/
-            
-        }
-        .cover-header {
-            min-width: 60vw;
-            max-width: 80vw;
-            margin: 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 1rem;
-        }
-        #footer{
-            display: flex;
-            min-width: 100%;
-            position: relative;
-            justify-content: center;
-            align-items: center; 
-            background-color: #444;
-            opacity: 0.8;   
-            min-height: 10vh;  
-        }
-        .social{
-            margin: 0rem 1rem 0rem 1rem;
-            display: flex;
-            min-width: 100%;
-            position: relative;
-            justify-content: center;
-            align-items: center; 
-        }
-        #footer i {
-            color: #000;
-            text-align: center;
-            text-decoration: none;
-            padding: 1rem;
-            display: inline-block;
-        }
-        #footer i:hover {
-            background-color: #333;
-            cursor: pointer;
-        }
-        .intro{            
-            background-color: #777;
-            opacity: 0.5;
-            border-radius: 5px;
-            border: solid 1px #FFF;
-            padding: 1rem;
-        }
-        #intro-img{
-            grid-row: 1/3; 
-        }
-        #intro-img img{
-            width: 100%;
-        }
-    </style>
+    
+
+
 
 </head>
 
 <body>
     <div class="wrapper">
 
-        <div id = "cover">
-            <div class="cover-header">
+        
+            <div class="nav" id="myNav">
+                <a href="#Longue" class="hvr-sweep-to-right">Longue</a>
+                <a href="#About" class="hvr-sweep-to-right">About</a>
+                <a href="#Projects"class="hvr-sweep-to-right">Projects</a>
+                <a href="#Sandbox"class="hvr-sweep-to-right">Sandbox</a>
+                <a href="#"class="hvr-sweep-to-right">Blog</a>
+                <a href="#Contact"class="hvr-sweep-to-right">Contact</a>
+                <a href="javascript:void(0);" class="icon" id="icon" onclick="controlNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+        
+        <div class="section section1" id="Longue">
+            <div class="section-header">
+                <h1>Welcome to my website!</h1>
+            </div>
+        </div>
+        <div class="section" id="About">
+            <div class="section-header">
+                    <img class="img-circle" src="http://thesocietyonline.org/wp-content/uploads/2016/11/Mystery-Person-Silhouette.jpg">
+                <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit provident minus laboriosam eveniet officia hic alias, ullam quibusdam consequuntur aspernatur facilis atque, voluptatem fuga, eligendi ea deserunt, nam beatae. Aut saepe facilis, nostrum soluta atque, similique corporis perspiciatis hic, sunt quisquam ducimus fugiat incidunt explicabo ullam eveniet numquam. Consequatur dolorum totam ipsum, sit, et eaque, sint itaque in consequuntur quaerat possimus! Libero, sit iste inventore officia harum eaque omnis corporis amet debitis. Alias officia odio eveniet tenetur. Enim dolorem ut iusto, eius sint delectus accusantium quam harum sapiente assumenda beatae minima ipsum, iure natus quidem asperiores aspernatur deleniti atque laudantium!</p>
+            </div>
+        </div>
+        <div class="section section2" id="Projects">
+            <div class="projects-wrapper">
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+        </div>
+        <div class="section" id="Blog">
+            
+        </div>
+        <div class="section section3" id="Sandbox">
+            <div class="projects-wrapper">
+                <div class="project lyndabg"><p>MEAN Stack and MongoDB: Development Techniques</p></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+        </div>
+        <div class="section" id="Contact">
+            <div class="zh-social">
+                <a href="https://github.com/ZanHorvat" target="_blank"><i class="socicon-github"></i></a>
+                <a href="https://www.facebook.com/zan.horvat.50951" target="_blank"><i class="socicon-facebook"></i></a>
+                <a href="https://stackoverflow.com/users/6912012/zhorvat?tab=profile" target="_blank"><i class="socicon-stackoverflow"></i></a>
+                <a href="https://bitbucket.org/ZanHorvat/" target="_blank"><i class="socicon-bitbucket"></i></a>
+                <a href="https://www.linkedin.com/in/%C5%BEan-horvat-57068372/" target="_blank"><i class="socicon-linkedin"></i></a>
+                <a href="mailto:zan.horvat@outlook.com"><i class="socicon-outlook"></i></a>
                 
             </div>
         </div>
 
-        <div id="footer">
-            <div class="social">
-                <a href="#"><i class="fa fa-facebook"></i></li></a>
-                <a href="#"><i class="fa fa-twitter"></i></li></a>
-                <a href="#"><i class="fa fa-instagram"></i></li></a>
-                <a href="#"><i class="fa fa-dribbble"></i></li></a>
-                <a href="#"><i class="fa fa-linkedin"></i></li></a>
-                <a href="mailto:zan.horvat@outlook.com"><i class="fa fa-envelope-o"></i></li></a>  
-            </div>       
-        </div>
-
     </div>
 </body>
+
+<script src="script.js"></script> 
+
 </html>
