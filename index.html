@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
-<style>
-    body {
-        background-color: black;
-        color: white;
-        height: 100vh;
-        display: flex;
-        justify-content: center; /* align horizontal */
-        align-items: center; /* align vertical */
-        overflow:hidden;
-    }
-    .container {
-        text-align: center;
-        
-    }
-    h1{
-        font-family: 'Audiowide', cursive;
-        font-size: 5rem;
-    }
-    p{
-        
-        font-family: Arial, Helvetica, sans-serif;
-        padding-top: 10rem;
-        color: grey;
-    }
-    footer{
-        position: absolute;
-        bottom: 2rem;
-    }
-</style>
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@ Žan Horvat</title>
 </head>
 <body>
         
 <div class="container">
-    <h1>74</h1>
+    <div id="title">
+        <h1>74</h1>
+    </div>
+    </br>
+    <div id="contacts">
+            <div id="social_links">
+                <a target="_blank" href="https://www.facebook.com/zan.horvat.50951"><i class="fa fa-facebook-square"></i></a>
+                <a target="_blank" href="https://github.com/ZanHorvat"><i class="fa fa-github-square"></i></a>
+                <a target="_blank" href="https://twitter.com/ZanHorvat74"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="https://stackoverflow.com/users/6912012/zhorvat74?tab=profile"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+            <div id="mail">
+                <span> zan.horvat@outlook.com <i onclick="copyToClipboard('#mail')" class="fa fa-clipboard"></i></span>
+            </div>
+            
+        </div>
+    
 </div>
-<footer><p>zan.horvat@outlook.com</p></footer>
-
+<footer>
+    
+    
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
