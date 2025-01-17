@@ -1,4 +1,5 @@
 <html class="h-100" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,63 +7,45 @@
     <meta name="author" content="Žan Horvat">
     <title>Žan Horvat</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="preload" href="https://fonts.googleapis.com">
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
-    <script rel="preload" src="https://kit.fontawesome.com/44f0ed3c55.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: rgb(0, 0, 0);
-        }
-        h1 { 
-            color: rgb(255, 255, 255, 0.6);
-            font-family: 'Comfortaa', sans-serif;
-            font-weight: 300;
-        }
-        p {
-            color: rgb(255, 255, 255, 0.4);
-            font-family: 'Comfortaa', sans-serif;
-        }
-        .fa-brands {
-            color: rgb(255, 255, 255, 0.3);
-            margin: 1rem 0.5rem 0 0.5rem;
-            font-size: 1.5rem;
-        }
-        .fa-linkedin:hover {
-            color: rgb(0, 119, 181);
-            transition: all .2s ease-out;
-        }
-        .fa-github:hover {
-            color: #6e40c9;
-            transition: all .2s ease-out;
-        }
-        .fa-strava:hover {
-            color: #fc4c02;
-            transition: color .2s ease-out;
-        }
-        .socials span {
-            color: rgb(255, 255, 255, 0.3);
-            font-size: 2rem;
-            font-weight: 100;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto"></header>
         <main class="px-3">
             <h1>Žan Horvat</h1>
             <div class="socials">
-                <a href="https://www.strava.com/athletes/zanhorvat"><i class="fa-brands fa-strava"></i></a>
-                <span>|</span>
-                <a href="https://www.linkedin.com/in/zanhorvat/"><i class="fa-brands fa-linkedin"></i></a>
-                <span>|</span>
-                <a href="https://github.com/ZanHorvat"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/zanhorvat/">
+                    <svg class="fa-brands fa-strava" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <!-- Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <a xlink:href="https://www.linkedin.com/in/zanhorvat/">
+                            <path
+                                d="M158.4 0L7 292h89.2l62.2-116.1L220.1 292h88.5zm150.2 292l-43.9 88.2-44.6-88.2h-67.6l112.2 220 111.5-220z" />
+                        </a>
+                    </svg>
+                </a>
+                <span> | </span>
+                <a href="https://www.linkedin.com/in/zanhorvat/">
+                    <svg class="fa-brands fa-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!-- Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                </a>
+                <span> | </span>
+                <a href="https://github.com/ZanHorvat">
+                    <svg class="fa-brands fa-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
+                        <!-- Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+                        <path
+                            d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
+                    </svg>
+                </a>
             </div>
         </main>
         <footer class="mt-auto"></footer>
     </div>
 </body>
+
 </html>
